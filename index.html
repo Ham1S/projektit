@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Form</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+     <script src="main.js"></script>
+ </head>
+ <body onload="document.registration.userid.focus();">
+     <h1>Rekisteröitymislomake</h1>
+     <h3>Siiry kentästä toiseen tab-näppäimellä</h3>
+<form name="registration" onsubmit="return validateForm()">
+    <ul>
+    <li><label for="userid">Käyttäjä ID:</label></li>
+    <li><input type="text" name="userid"></li>
+    <li><label for="passid">Salasana:</label></li>
+    <li><input type="password" name="passid"></li>
+    <li><label for="username">Nimi:</label></li>
+    <li><input type="text" name="username"></li>
+    <li><label for="address">Osoite:</label></li>
+    <li><input type="text" name="address"></li>
+    <li><label for="country">Maa:</label></li>
+    <li><select name="country">
+            <option value="Default" disabled selected>(Valitse maa)</option>
+            <option value="1">Suomi</option>
+            <option value="2">Ruotsi</option>
+            <option value="3">Venäjä</option>
+            <option value="4">Viro</option>
+            <option value="5">Norja</option> 
+            </select></li>
+    <li><label for="zip">Postinumero:</label></li>
+    <li><input type="text" name="zip"></li>
+    <li><label for="email">Sähköposti:</li>
+    <li><input type="text" name="email"></li>
+    <li><label id="gender">Sukupuoli:</label></li>
+    <li><input type="radio" name="sex" value="Mies"><span>Mies</span></li>
+    <li><input type="radio" name="sex" value="Nainen"><span>Nainen</span></li>
+    <li><label>Kieli:</label></li>
+    <li><input type="checkbox" name="checkbox" value="Suomi"><span>Suomi</span></li>
+    <li><input type="checkbox" name="checkbox"value="Muu"><span>Muu kuin suomi</span></li>
+    <li><label for="desc">Lisätietoja</label></li>
+    <li><textarea name="desc" id="desc"></textarea></li>
+            
+    <li><input type="submit" value="Lähetä"></li>
+    </ul>
+
+</form>
+     
+ </body>
+ </html>
